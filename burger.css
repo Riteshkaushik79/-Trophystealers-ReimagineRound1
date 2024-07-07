@@ -1,0 +1,51 @@
+.vedodiv{
+    clip-path:circle(var(--clip) at 50% 50%);
+}
+
+body{
+    transition: background-color ease-out 0.9s;
+}
+
+:root{
+    --black: black;
+    --green: #28cf97;
+    --blue: #48b4c2;
+    --white: white;
+    --dgreen: #0f4704;
+    --dblue: #061779;
+    --dred:#990435;
+}
+
+body[theme="black"]{
+    background-color: var(--black);
+}
+
+body[theme="green"]{
+    background-color: var(--green);
+}
+
+body[theme="blue"]{
+    background-color: var(--blue);
+}
+
+
+body[theme="black"] .section{
+    color: var(--white);
+}
+
+
+body[theme="green"] .section{
+    color: var(--dgreen);
+}
+
+body[theme="green"] .section-b{
+    color: var(--dred);
+}
+
+body[theme="blue"] .section{
+    color: var(--dblue);
+}
+
+body[theme="blue"] .section-b{
+    color: var(--dred);
+}
